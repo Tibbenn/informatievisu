@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
 
-df = pd.read_csv(r'blkjck.csv')
+df = pd.read_csv(r'blkjckhands.csv')
 df = df.iloc[:, 1:]
 
 
@@ -14,3 +14,5 @@ def treemap():
 
     fig.update_layout(title='Figuur 7: Treemap het resultaat van de gespeelde handen per speler')
     return fig.show()
+
+print(treemap())
